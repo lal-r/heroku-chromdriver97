@@ -29,7 +29,7 @@ if [ -f $ENV_DIR/CHROMEDRIVER_VERSION ]; then
   VERSION=$(cat $ENV_DIR/CHROMEDRIVER_VERSION)
 else
   topic "Looking up latest chromedriver version"
-  LATEST="https://chromedriver.storage.googleapis.com/LATEST_RELEASE"
+  LATEST="https://chromedriver.storage.googleapis.com/LATEST_RELEASE_97.0.4692"
   VERSION=`curl -s $LATEST`
 fi
 indent "Version $VERSION"
